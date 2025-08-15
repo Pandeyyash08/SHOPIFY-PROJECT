@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Banana Bliss — Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">Banana Bliss</div>
+      <nav class="nav">
+        <button type="button" class="nav-btn">Home</button>
+        <button type="button" class="nav-btn">Shop</button>
+        <button type="button" class="nav-btn">About</button>
+      </nav>
+    </header>
+
+    <main class="product-grid">
+<section class="gallery" aria-label="Product gallery">
+  <div class="main-media">
+    <img id="mainImg" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1400&auto=format&fit=crop" alt="Product image">
+  </div>
+  <div class="thumbs" role="list">
+    <button class="thumb" aria-label="View image 1"><img src="jeans.png" alt="Thumbnail 1"></button>
+    <button class="thumb" aria-label="View image 1"><img src="OIP.png" alt="Thumbnail 2"></button>
+    <button class="thumb" aria-label="View image 2">
+  <img src="hodie.jpg" alt="Thumbnail 3">
+</button>
+<button class="thumb" aria-label="View image 3">
+  <img src="shorts.jpg" alt="Thumbnail 4">
+</button>
+<button class="thumb" aria-label="View image 4">
+  <img src="stripped.jpg" alt="Thumbnail 5">
+</button>
+<button class="thumb" aria-label="View image 5">
+  <img src="jacket.jpg" alt="Thumbnail 6">
+</button>
+
+
+    <button class="thumb" aria-label="View image 6"><img src="OIP 2.png" alt="Thumbnail 7"></button>
+  </div>
+</section>
+
+
+      <aside class="details" aria-labelledby="productTitle">
+        <h1 id="productTitle" class="title">Banana Bliss — Oversized T-shirt</h1>
+        
+      
+        <button id="sizeChartBtn" class="btn btn-primary">View Size Chart</button>
+
+        <p class="tagline">Soft organic cotton · Relaxed fit · Unisex</p>
+
+        <div class="price-row">
+          <div class="price">₹899</div>
+          <div class="old-price">₹1,299</div>
+        </div>
+
+        <div class="option-row" role="radiogroup" aria-label="Select size">
+          <button class="size-btn" data-size="S">S</button>
+          <button class="size-btn active" data-size="M" aria-checked="true">M</button>
+          <button class="size-btn" data-size="L">L</button>
+          <button class="size-btn" data-size="XL">XL</button>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" id="addToCart">Add to cart</button>
+          <button class="btn btn-outline">Buy now</button>
+        </div>
+
+        <p class="desc">Elevate your casual wardrobe with the Banana Bliss oversized tee — breathable, soft, and cut for an easy silhouette.</p>
+
+        <section class="related" aria-label="You may also like">
+          <div class="related-header">
+            <h3>You may also like</h3>
+            <small class="muted">Scroll →</small>
+          </div>
+          <div id="carousel" class="carousel" tabindex="0">
+            <article class="card"><img src="jeans.png" alt=""><div class="label">Jeans</div></article>
+            <article class="card"><img src="OIP.png" alt=""><div class="label">Banana Bliss — Tee</div></article>
+            <article class="card"><img src="hodie.jpg" alt=""><div class="label">Cozy Hoodie</div></article>
+            <article class="card"><img src="OIP 2.png" alt=""><div class="label">Everyday Tee</div></article>
+            <article class="card"><img src="shorts.jpg" alt=""><div class="label">Lounge Shorts</div></article>
+            <article class="card"><img src="stripped.jpg" alt=""><div class="label">Striped Tee</div></article>
+            <article class="card"><img src="jacket.jpg" alt=""><div class="label">Denim Jacket</div></article>
+          </div>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Size Chart Modal -->
+  <div id="sizeChartModal" class="modal">
+    <div class="size-chart-content">
+      <span class="close-btn">&times;</span>
+      <h2>Size Chart</h2>
+      <table>
+        <tr>
+           <th>SIZE</th>
+          <th>USA</th>
+          <th>EU</th>
+          <th>CHEST</th>
+          <th>SLEEVE</th>
+          <th>WAIST</th>
+          <th>HIPS</th>
+          <th>INSEAM</th>
+        </tr>
+        <tr>
+           <tr><td>S</td><td>34</td><td>44</td><td>36.2”</td><td>32”</td><td>29”</td><td>39”</td><td>30.7”</td></tr>
+        <tr><td></td><td>36</td><td>46</td><td>37.8”</td><td>32.5”</td><td>31”</td><td>40”</td><td>31.2”</td></tr>
+        <tr><td>M</td><td>38</td><td>48</td><td>39.4”</td><td>33”</td><td>33”</td><td>41”</td><td>31.5”</td></tr>
+        <tr><td></td><td>40</td><td>50</td><td>41”</td><td>33.5”</td><td>35”</td><td>42”</td><td>32”</td></tr>
+        <tr><td>L</td><td>42</td><td>52</td><td>42.6”</td><td>34”</td><td>37”</td><td>44”</td><td>32.5”</td></tr>
+        <tr><td>XL</td><td>44</td><td>54</td><td>44.2”</td><td>34.5”</td><td>39”</td><td>46”</td><td>32.7”</td></tr>
+        <tr><td></td><td>46</td><td>56</td><td>45.8”</td><td>35”</td><td>41”</td><td>48”</td><td>33”</td></tr>
+        <tr><td>XXL</td><td>48</td><td>58</td><td>47.5”</td><td>35.7”</td><td>43”</td><td>50”</td><td>33.5”</td></tr>
+        <tr><td></td><td>50</td><td>60</td><td>49.2”</td><td>36.2”</td><td>45”</td><td>52”</td><td>34”</td></tr>
+        <tr><td>XXX</td><td>52</td><td>62</td><td>50.9”</td><td>36.7”</td><td>47”</td><td>54”</td><td>34.2”</td></tr>
+        <tr><td></td><td>54</td><td>64</td><td>45.8”</td><td>37.2”</td><td>49”</td><td>56”</td><td>34.5”</td></tr>
+        <tr><td>L</td><td>56</td><td>66</td><td>47.5”</td><td>37.7”</td><td>51”</td><td>57”</td><td>35”</td></tr>
+        </tr>
+      </table>
+    </div>
+  </div>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>🍌 Banana Bliss</h2>
+      <p>Your go-to store for comfy, stylish, and fun apparel.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook">🌐</a>
+      <a href="#" aria-label="Instagram">📷</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Banana Bliss. All rights reserved.</p>
+  </div>
+</footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
