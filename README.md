@@ -56,5 +56,4 @@ Made with ❤️ for demo purposes.
 
 If you want, I can also make **a version with a screenshot preview at the top** so your GitHub README shows your site design immediately when someone visits.  
 That usually makes the repo more appealing.
-<img width="1509" height="270" alt="Screenshot 2025-08-15 162053" src="https://github.com/user-attachments/assets/4988c065-7b09-4137-9e39-6679b1b1e785" />
-<img width="1877" height="1095" alt="image" src="https://github.com/user-attachments/assets/79bf2911-6213-4563-8ae1-166b95576295" />
+
